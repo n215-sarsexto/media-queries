@@ -1,0 +1,33 @@
+.example {
+  min-height: 800px;
+  width: 70%;
+  background-color: bisque;
+  margin: 0 auto;
+
+  .box {
+    width: 50%;
+    height: 200px;
+    background-color: azure;
+  }
+  .media-box {
+    width: 600px;
+    height: 200px;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .example {
+    .media-box {
+      background-color: pink;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .example {
+    .media-box {
+      width: 300px;
+    }
+  }
+}
